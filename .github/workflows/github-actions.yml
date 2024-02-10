@@ -3,24 +3,34 @@ on:
   push:
     branches:
       - main
+permissions:
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 jobs:
   build:
-    permissions:
-      pages: write
-      id-token: write
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout main
-      uses: actions/checkout@v4
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10' 
-    - name: Build
-      run: mkdocs build --strict --verbose
-    - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: "public/"
-    - name: Deploy
-      usess: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+      - name: Build with mkdocs
+        run: mkdocs build --strict --verbose
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+  deploy:
+    environment:
+      name: github-pages
+      url:  ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        usess: actions/deploy-pages@v4
