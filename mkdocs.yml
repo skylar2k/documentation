@@ -1,0 +1,29 @@
+site_name: unix.rs
+site_url: https://unix.rs
+site_dir: public
+docs_dir: ./docs
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  features:
+    - navigation.indexes
+    - navigation.instant
+
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+  - admonition
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - roamlinks
+  - tags
