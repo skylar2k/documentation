@@ -13,6 +13,9 @@ List of tools I prefer using.
 - Editor:
 	- [Spacemacs](https://www.spacemacs.org/)
 	- [Neovim](https://neovim.io/)
+- Programming Languages
+	- [Rust Programming Language](https://www.rust-lang.org/)
+	- [Python](https://www.python.org/)
 - Networking
 	- Emulation
 		- [GNS3](https://www.gns3.com/)
