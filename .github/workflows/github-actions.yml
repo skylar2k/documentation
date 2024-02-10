@@ -5,6 +5,9 @@ on:
       - main
 jobs:
   build:
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
     - name: Checkout main
@@ -18,16 +21,5 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: "public/"
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    runs-on: ubuntu-latest
-    steps:
     - name: Deploy
       usess: actions/deploy-pages@v4
-      with:
-        token: ${{github.token}}
-
-        
