@@ -10,6 +10,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.instant
+    - content.code.annotate
 
 markdown_extensions:
   - footnotes
@@ -20,6 +21,9 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.tasklist
   - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
 
@@ -27,3 +31,4 @@ plugins:
   - search
   - roamlinks
   - tags
+  - git-revision-date-localized
