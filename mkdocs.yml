@@ -31,4 +31,7 @@ plugins:
   - search
   - roamlinks
   - tags
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: datetime
+      timezone: "Europe/Amsterdam"
+      enable_creation_date: true
