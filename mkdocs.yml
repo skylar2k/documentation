@@ -3,6 +3,9 @@ site_url: https://unix.rs
 site_dir: public
 docs_dir: ./docs
 
+watch:
+  - includes
+
 theme:
   name: material
   palette:
@@ -14,7 +17,11 @@ theme:
 
 markdown_extensions:
   - footnotes
+  - abbr
   - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
