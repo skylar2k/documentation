@@ -16,7 +16,7 @@
 - Purpose: Virtualization host
 - OS: [Harvester - Open-source hyperconverged infrastructure (harvesterhci.io)](https://harvesterhci.io/)
 #### Specs
-- RAM: 128GB
+- RAM: 256GB
 ### OptiPlex 7040 Micro x3
 - Purpose: Bare metal OCP4/Kubernetes lab
 #### Specs
