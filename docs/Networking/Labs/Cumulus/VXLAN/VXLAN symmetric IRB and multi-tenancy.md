@@ -1,1 +1,0 @@
-This lab configures [[VXLAN]] with symmetric [[IRB]] on a Spine-Leaf topology. It will also use [[VRF]] for multi-tenancy.

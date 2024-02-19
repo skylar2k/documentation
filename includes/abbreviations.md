@@ -4,3 +4,5 @@
 *[LAG]: Link Aggregation Group
 *[MAC]: Media Access Control
 *[MLAG]: Multi-chassis link aggregation group
+*[OSPF]: Open Shortest Path First
+*[BGP]: Border Gateway Protocol
