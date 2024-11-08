@@ -21,4 +21,4 @@ List of tools I prefer using.
 		- [GNS3](https://www.gns3.com/)
 		- [Netlab](https://netlab.tools/)
 ## My links
-[skylar2k (Skylar) (github.com)](https://github.com/skylar2k)
+[skylar2k (Skylar Johansen) (github.com)](https://github.com/skylar2k)

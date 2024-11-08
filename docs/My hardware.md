@@ -25,7 +25,7 @@
 ## Networking
 ### TLSense N5105L4
 - Purpose: Firewall/Router
-- OS: OpenBSD 7.4
+- OS: OpenBSD 7.6
 #### Specs
 - Network Ports: 2.5Gbit x 4
 - CPU: N5105
