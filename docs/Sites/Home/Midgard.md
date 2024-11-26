@@ -5,6 +5,7 @@
 	- pf
 	- dhcpd
 	- sshd
+	- ldapd
 - OS: OpenBSD 7.6
 ## Config
 ### Allow 'sky' to use doas
@@ -12,3 +13,4 @@
 	```bash linenums="1"
 	permit persist sky as root
 	```
+### LDAPD
