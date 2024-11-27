@@ -1,7 +1,7 @@
 ## What is it?
 A routing table, also known as routing information base (RIB), is a data table stored in a router or network host that lists the routes to distinct network destinations. The routing table contains information about the immediately surrounding network topology.
 
-[[Networking/Technologies/Routing protocols/index|Routing protocols]] are responsible for the construction of the routing table. Static routes are entries that are fixed, rather than discovered by routing protocols.
+Routing protocols are responsible for the construction of the routing table. Static routes are entries that are fixed, rather than discovered by routing protocols.
 
 ## Contents
 A routing table consists of at least three information fields:
