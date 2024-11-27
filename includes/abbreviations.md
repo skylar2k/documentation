@@ -6,3 +6,4 @@
 *[MLAG]: Multi-chassis link aggregation group
 *[OSPF]: Open Shortest Path First
 *[BGP]: Border Gateway Protocol
+*[OOBE]: Out Of Box Experience
