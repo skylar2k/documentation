@@ -12,6 +12,16 @@
 	- `Archicad 28.0 NOR FULL R1 1`
 		- DisplayName: Archicad 28 R1 NOR
 		- UninstallString: `"C:\Program Files\Graphisoft\Archicad 28\Uninstall.AC\Uninstall.exe"`
+		- DisplayVersion: `28.0.0.3001`
 	- `License Manager Tool 20.0 INT FULL R1 1`
 		- DisplayName: GRAPHISOFT License Manager Tool
 		- UninstallString: `"C:\Program Files\Graphisoft\License Manager Tool\Uninstall.LMT\Uninstall.exe"`
+
+## Intune
+### Detection Rules
+- Rule type: Registry
+	- Key path: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Archicad 28.0 NOR FULL R1 1`
+	- Value name: DisplayVersion
+	- Detection method: Version comparison
+	- Operator: Equals
+	- Value: `28.0.0.3001`
