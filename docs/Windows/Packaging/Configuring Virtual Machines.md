@@ -67,4 +67,4 @@ After the VM is configured, run through the windows setup with a local user acco
 	Checkpoint-VM -Name "pkg-win11-01" FreshInstallWithUpdates
 	```
 ### Autopilot VM
-Gather the HWID and other information needed during OOBE and register them in your Autopilot devices. Getting the required information can be done by pressing Ctrl+Shift+D during OOBE, this opens the diagnostic menu where you can export autopilot logs congaing the one CSV file you need.
+Gather the HWID and other information needed during OOBE and register them in your Autopilot devices. Getting the required information can be done by pressing ++ctrl+shift+d++ during OOBE, this opens the diagnostic menu where you can export autopilot logs congaing the one CSV file you need.
