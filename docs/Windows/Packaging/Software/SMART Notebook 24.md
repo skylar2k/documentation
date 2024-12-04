@@ -58,3 +58,4 @@
 ## Tests
 - [x] Application installs on Autopilot VMs
 - [x] Application uninstalls from Autopilot VMs
+- [x] Application reinstalls on Autopilot VMs
