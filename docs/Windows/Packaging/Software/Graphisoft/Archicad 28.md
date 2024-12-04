@@ -1,8 +1,10 @@
 ## Installation
 - BMIx Desktop is no longer bundled.
 - Install Path: `C:\Program Files\Graphisoft\Archicad 28`
+- Don't remove installed components, since this can break other installed software that depends on them.
+- License Manager Tool could potentially be packaged on its own.
 ### Registry changes
-- `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`
+???- info "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
 	- `{00060000-0000-1004-8002-0000C06B5161}`
 		- DisplayName: WibuKey Setup (WibuKey Remove)
 		- UninstallString: `"C:\Program Files (x86)\WIBUKEY\Setup\Setup64.exe" /R:{00060000-0000-1004-8002-0000C06B5161}`
@@ -25,3 +27,9 @@
 	- Detection method: Version comparison
 	- Operator: Equals
 	- Value: `28.0.0.3001`
+## Tests
+- [x] Application installs on Autopilot VMs
+- [x] Application has working license
+- [x] Application is detected in Intune
+- [x] Application uninstalls from Autopilot VMs
+- [x] Application reinstalls on Autopilot VMs
