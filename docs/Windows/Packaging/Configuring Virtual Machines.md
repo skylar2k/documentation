@@ -68,3 +68,5 @@ After the VM is configured, run through the windows setup with a local user acco
 	```
 ### Autopilot VM
 Gather the HWID and other information needed during OOBE and register them in your Autopilot devices. Getting the required information can be done by pressing ++ctrl+shift+d++ during OOBE, this opens the diagnostic menu where you can export autopilot logs congaing the one CSV file you need.
+
+The Autopilot VMs should be reset for testing new packages, for this you can use the Company Portal to reset the device.
