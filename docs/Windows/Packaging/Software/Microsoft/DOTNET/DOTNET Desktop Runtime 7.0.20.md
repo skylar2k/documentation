@@ -18,7 +18,7 @@
 		- UninstallString: `MsiExec.exe /X{72C29BED-666F-4E5E-BC49-DF44C890742E}`
 		- DisplayVersion: 56.80.15245
 
-## File paths:
+## File paths
 - `C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\7.0.20`
 - `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.20`
 
