@@ -2,6 +2,8 @@
 - Arch: x86_64
 - Dependencies:
 	- [[DOTNET Runtime 4.8.1]]
+	- [[Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161]]
+	- [[Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161]]
 ## Registry changes
 ???- info ""
 	- ``

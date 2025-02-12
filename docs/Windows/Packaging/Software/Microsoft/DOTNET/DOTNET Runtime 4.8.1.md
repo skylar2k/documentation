@@ -14,5 +14,5 @@
 	- Operator Greater than or equal to
 	- Value: `533320`
 ## Tests
- - [X] Application installs on Autopilot VMs
- - [x] Application is detected in Intune
+- [X] Application installs on Autopilot VMs
+- [x] Application is detected in Intune
