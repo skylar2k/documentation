@@ -8,3 +8,6 @@ To use this repo, you need:
 - [IntuneWInAppUtil.exe](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool)
 - [junegunn/fzf: :cherry_blossom: A command-line fuzzy finder](https://github.com/junegunn/fzf)
 - [kelleyma49/PSFzf: A PowerShell wrapper around the fuzzy finder fzf](https://github.com/kelleyma49/PSFzf)
+## Useful software for packaging
+- [Process Monitor - Sysinternals | Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
+- [RegistryChangesView - Compare snapshots of Windows Registry](https://www.nirsoft.net/utils/registry_changes_view.html)

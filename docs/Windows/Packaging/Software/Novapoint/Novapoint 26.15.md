@@ -4,6 +4,8 @@
 	- [[DOTNET Runtime 4.8.1]]
 	- [[Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161]]
 	- [[Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161]]
+	- [[Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219]]
+	- [[Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219]]
 ## Registry changes
 ???- info ""
 	- ``
