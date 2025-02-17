@@ -1,7 +1,7 @@
 ## Installation
 - Arch:
 ## Registry changes
-???- info ""
+???- info "HKLM\"
 	- ``
 		- DisplayName: 
 		- DisplayVersion: 
