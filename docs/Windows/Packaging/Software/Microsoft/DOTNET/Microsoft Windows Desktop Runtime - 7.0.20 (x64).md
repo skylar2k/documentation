@@ -36,15 +36,14 @@
 [array]$runtimes = $null
 
 if (Test-Path -Path $RegistryPath -PathType Container) {
-    [array]$runtimes = Get-ChildItem -Path "$RegistryPath" |
-    Where-Object PSChildName -eq "Microsoft.WindowsDesktop.App" |
-    Select-Object -ExpandProperty Property |
-    Where-Object { ($_ -like "7.0.*") -and ($_ -ge $MinVer) }
+	[array]$runtimes = Get-ChildItem -Path "$RegistryPath" |
+	Where-Object PSChildName -eq "Microsoft.WindowsDesktop.App" |
+	Select-Object -ExpandProperty Property |
+	Where-Object { ($_ -like "7.0.*") -and ($_ -ge $MinVer) }
 }
 if ($null -eq $runtimes) {
-    Write-Error "Application not installed, minimum version not met."
-    exit 1
-
+	Write-Error "Application not installed, minimum version not met."
+	exit 1
 }
 Write-Output "Application detected, minimum version is met."
 ```
