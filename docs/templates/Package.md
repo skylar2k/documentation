@@ -19,5 +19,6 @@
 ## Tests
 - [ ] Application installs on Autopilot VMs
 - [ ] Application is detected in Intune
+- [ ] Application uninstalls
 - [ ] Application reinstalls on Autopilot VMs
 - [ ] License activates

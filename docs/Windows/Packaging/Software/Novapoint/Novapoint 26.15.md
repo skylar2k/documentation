@@ -1,12 +1,14 @@
 ## Installation
 - Arch: x86_64
-- Dependencies:
-	- [[Microsoft Windows Desktop Runtime - 7.0.20 (x64)]]
-	- [[Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161]]
-	- [[Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161]]
-	- [[Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219]]
-	- [[Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219]]
-	- Microsoft Visual C++ 2022 Redistributable Package
+## Dependencies
+- [[Microsoft Windows Desktop Runtime - 7.0.20 (x64)]]
+- [[Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161]]
+- [[Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161]]
+- [[Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219]]
+- [[Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219]]
+- Microsoft Visual C++ 2022 Redistributable Package
+- [[Microsoft SQL Server Compact 3.5 SP2 x86 ENU]]
+- [[Microsoft SQL Server Compact 3.5 SP2 x64 ENU]]
 ## Registry changes
 ???- info ""
 	- ``
