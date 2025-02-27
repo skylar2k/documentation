@@ -1,5 +1,7 @@
 ## Installation
 - Arch:
+- Silent install:
+- Silent uninstall
 ## Registry changes
 ???- info "HKLM\"
 	- ``
@@ -7,6 +9,8 @@
 		- DisplayVersion: 
 		- UninstallString: ``
 ## File paths
+- ``
+???- info "Shared DLLs"
 - ``
 ## Intune
 ### Detection Rules
