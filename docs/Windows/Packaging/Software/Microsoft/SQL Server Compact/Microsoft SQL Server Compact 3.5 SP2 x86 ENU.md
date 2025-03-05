@@ -26,11 +26,6 @@
 	- Detection method: Version comparison
 	- Operator: Greater than or equal to
 	- Value: `3.5.8080.0`
-???- info "Key Path: `HKLM\Software\WOW6432Node\Microsoft\Microsoft SQL Server Compact Edition\v3.5`"
-	- Value name: ServicePackLevel
-	- Detection method: Integer comparison
-	- Operator: Greater than or equal to
-	- Value: `2`
 ## Tests
 - [x] Application installs on Autopilot VMs
 - [x] Application is detected in Intune
