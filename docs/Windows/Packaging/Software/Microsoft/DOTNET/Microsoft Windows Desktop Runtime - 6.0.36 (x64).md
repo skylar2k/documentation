@@ -43,20 +43,21 @@
 #### Rule type: Detection script
 ```powershell title="Custom detection script"
 [string]$RegistryPath = "HKLM:\SOFTWARE\WOW6432Node\dotnet\Setup\InstalledVersions\x64\sharedfx"
-[version]$MinVer = '6.0.36'
+[version]$MinVer = '7.0.20'
 [array]$runtimes = $null
 
 if (Test-Path -Path $RegistryPath -PathType Container) {
-	[array]$runtimes = Get-ChildItem -Path "$RegistryPath" |
-	Where-Object PSChildName -eq "Microsoft.WindowsDesktop.App" |
-	Select-Object -ExpandProperty Property |
-	Where-Object { ($_ -like "6.0.*") -and ($_ -ge $MinVer) }
+    $runtimes = Get-ChildItem -Path "$RegistryPath" |
+    Where-Object PSChildName -eq "Microsoft.WindowsDesktop.App" |
+    Select-Object -ExpandProperty Property |
+    Where-Object { ($_ -like "7.0.*") -and ($_ -ge $MinVer) }
 }
 if ($null -eq $runtimes) {
-	Write-Error "Application not installed, minimum version not met."
-	exit 1
+    Write-Output "Minimum version: $MinVer for Windows Desktop Runtime not detected"
+    exit 1
 }
-Write-Output "Application detected, minimum version is met."
+Write-Output "Minimum version: $MinVer for Windows Desktop Runtime detected"
+exit 0
 ```
 ## Tests
 - [ ] Application installs on Autopilot VMs
