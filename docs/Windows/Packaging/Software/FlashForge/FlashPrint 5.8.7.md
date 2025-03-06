@@ -18,7 +18,7 @@
 ### Detection Rules
 #### Rule type: Registry
 ???- info "Key path: `HKLM\Software\MRFK\FlashForge\FlashPrint 5`"
-	- Value name: version
+	- Value name: Version
 	- Detection method: Version comparison
 	- Operator: Greater than or equal to
 	- Value: `5.8.7`
