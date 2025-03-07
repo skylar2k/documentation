@@ -1,5 +1,5 @@
 ## Installation
-- Arch: x64
+- Arch: x86_64
 - Silent install: windowsdesktop-runtime-6.0.36-win-x64.exe /install /quiet /norestart
 - Silent uninstall: windowsdesktop-runtime-6.0.36-win-x64.exe /uninstall /quiet /norestart
 ## Registry changes
