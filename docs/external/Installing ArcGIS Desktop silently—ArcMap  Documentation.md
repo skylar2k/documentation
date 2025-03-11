@@ -1,0 +1,88 @@
+-   [ArcGIS Desktop installation command line parameters](https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-silently.htm#GUID-6CA9DEFB-9F58-495C-9E00-9325928F1328)
+-   [How to perform a typical installation of ArcGIS Desktop without user interaction](https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-silently.htm#ESRI_SECTION1_BBE21A4F558B408B94E98E930E86747E)
+-   [How to perform a complete installation of ArcGIS Desktop silently](https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-silently.htm#ESRI_SECTION1_D871AE098E214B8A8A13F395848D87B6)
+-   [How to perform a custom installation of ArcGIS Desktop silently](https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-silently.htm#ESRI_SECTION1_D5B4AAC9E9084B1BB1C1195B1B3CE533)
+-   [How to perform an uninstallation of ArcGIS 10.8.2 for Desktop silently](https://desktop.arcgis.com/en/arcmap/latest/get-started/installation-guide/installing-silently.htm#ESRI_SECTION1_DB300963DA294A458B00115385F674A7)
+
+ArcGIS Desktop can be installed without a user interface (UI) by running the setup with Windows Installer command line parameters.
+
+It is highly recommended that you include the ESRI\_LICENSE\_HOST, SOFTWARE\_CLASS, SEAT\_PREFERENCE, and DESKTOP\_CONFIG command line parameters when installing silently where applicable to your installation. This will enable a user to install without UI interaction or having to complete the ArcGIS Administrator Wizard.
+
+## ArcGIS Desktop installation command line parameters
+
+The following are the command line switches to execute the ArcGIS Desktop setup directly. The parameters are case sensitive and should be used as defined below.
+
+| Parameter            | Value            | Required                                                                                           | Description                                                                                                                                                                                                                                                                                                               |
+| -------------------- | ---------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ACCEPTEULA=          | yes              | Yes The software will not install if you specify no or omit this property.                         | This property is required to accept the End User License Agreement during a silent installation.                                                                                                                                                                                                                          |
+| ESRI\_LICENSE\_HOST= | License Manager  | Yes for Concurrent Use                                                                             | Machine name of license manager.                                                                                                                                                                                                                                                                                          |
+| SOFTWARE\_CLASS=     | Viewer           | Yes                                                                                                | Installs ArcGIS Desktop as Basic (ArcView).                                                                                                                                                                                                                                                                               |
+|                      | Editor           |                                                                                                    | Installs ArcGIS Desktop as Standard (ArcEditor).                                                                                                                                                                                                                                                                          |
+|                      | Professional     |                                                                                                    | Installs ArcGIS Desktop as Advanced (ArcInfo).                                                                                                                                                                                                                                                                            |
+| SEAT\_PREFERENCE=    | Fixed            | Yes                                                                                                | Installs your ArcGIS software class as a Single Use seat.                                                                                                                                                                                                                                                                 |
+|                      | Float            | Yes                                                                                                | Installs your ArcGIS software class as a Concurrent Use seat.                                                                                                                                                                                                                                                             |
+| INSTALLDIR=          |                  | No                                                                                                 | ArcGIS Desktop installation location. If not specified, the installation location is %System Drive%\\Program Files\\ArcGIS for 32-bit operating systems and %System Drive%\\Program Files (x86)\\ArcGIS for 64-bit operating systems.                                                                                     |
+| INSTALLDIR1=         |                  | No                                                                                                 | Python installation location. If this feature is required and the value is not specified, the default location is Python27 on local system drive.                                                                                                                                                                         |
+| DESKTOP\_CONFIG=     | TRUE             | Yes (if you supply ESRI\_LICENSE\_HOST, SOFTWARE\_CLASS, and SEAT\_PREFERENCE on the command line) | Setting this parameter to TRUE will prevent ArcGIS Administrator Wizard from being launched automatically at the end of the setup.                                                                                                                                                                                        |
+| BLOCKADDINS=         | #0               | No                                                                                                 | Load all add-ins regardless of whether they have digital signatures.                                                                                                                                                                                                                                                      |
+|                      | #1               | No                                                                                                 | Only load and use add-ins that are digitally signed by a trusted certificate authority.                                                                                                                                                                                                                                   |
+|                      | #2               | No                                                                                                 | Only load and use add-ins that have been published by Esri.                                                                                                                                                                                                                                                               |
+|                      | #3               | No                                                                                                 | Only load add-ins from the administrator folders and all add-ins published by Esri.                                                                                                                                                                                                                                       |
+|                      | #4               | No                                                                                                 | Do not load or execute add-ins in this application.                                                                                                                                                                                                                                                                       |
+| ENABLEEUEI=          | 0                | No                                                                                                 | Do not enable participation in the Esri User Experience Improvement.                                                                                                                                                                                                                                                      |
+|                      | 1 (1 is default) | No                                                                                                 | Enable participation in the Esri User Experience Improvement.                                                                                                                                                                                                                                                             |
+| MODIFYFLEXDACL=      | TRUE             | No                                                                                                 | The default value is FALSE. Enabling this property to TRUE alters the following permissions to allow management of the FlexNet anchor service by any user: SERVICE\_QUERY\_CONFIG SERVICE\_QUERY\_STATUS SERVICE\_ENUMERATE\_DEPENDENTS SERVICE\_START SERVICE\_INTERROGATE SERVICE\_USER\_DEFINED\_CONTROL READ\_CONTROL |
+
+## How to perform a typical installation of ArcGIS Desktop without user interaction
+
+Run this command from the command line to install ArcGIS Desktop as Advanced Concurrent Use using the machine GIS as the license manager. This example will also install Python to D:\\python27:
+
+<setup staging location>\\setup.exe ESRI\_LICENSE\_HOST=GIS ACCEPTEULA=yes SOFTWARE\_CLASS=Professional SEAT\_PREFERENCE=Float DESKTOP\_CONFIG=TRUE INSTALLDIR1=D:\\python27 /qb
+
+Additional command line parameters are available:
+
+INSTALLDIR=<installation directory> can be used to specify an installation location. The default location is C:\\Program Files\\ArcGIS if no INSTALLDIR parameter is given. If you are upgrading ; the INSTALLDIR parameter is not applicable, the installation location of the previous installation will be used. INSTALLDIR1=<installation directory> can be used to specify an installation location for Python except on an upgrade. The default location for this feature is python27 on the local system drive.
+
+The following is an example of a client installation where an administrative installation exists on a server (\\\\machinename):
+
+\\\\machinename\\ArcGIS\\setup.exe INSTALLDIR=C:\\ArcGIS ESRI\_LICENSE\_HOST=GIS SOFTWARE\_CLASS=Professional ACCEPTEULA=yes SEAT\_PREFERENCE=Float DESKTOP\_CONFIG=TRUE /qb
+
+## How to perform a complete installation of ArcGIS Desktop silently
+
+Run this command from the command line to install a Complete ArcGIS Desktop Standard license level with the machine GIS as the license manager:
+
+<setup staging location>\\setup.exe ADDLOCAL=ALL ACCEPTEULA=yes ESRI\_LICENSE\_HOST=GIS SOFTWARE\_CLASS=Editor SEAT\_PREFERENCE=Float DESKTOP\_CONFIG=TRUE /qb
+
+An additional command line parameter is available:
+
+INSTALLDIR=<installation directory> if you do not want to install to the default location of C:\\Program Files\\ArcGIS. If you are upgrading, the INSTALLDIR parameter is not applicable, it will detect the installation location.
+
+For example
+
+<setup staging location>\\setup.exe INSTALLDIR=C:\\ArcGIS ACCEPTEULA=yes ESRI\_LICENSE\_HOST=GIS SOFTWARE\_CLASS=Editor SEAT\_PREFERENCE=Float DESKTOP\_CONFIG=TRUE /qb
+
+## How to perform a custom installation of ArcGIS Desktop silently
+
+Run this command from the command line to perform a custom ArcGIS Desktop installation with the machine GIS as the license manager and the product type as professional:
+
+<setup staging location>\\setup.exe /qb ACCEPTEULA=yes ADDLOCAL=<feature1>,<feature2>,.... ESRI\_LICENSE\_HOST=GIS SOFTWARE\_CLASS=Professional SEAT\_PREFERENCE=Float DESKTOP\_CONFIG=TRUE /qb
+
+To install ArcGIS Desktop as a Single Use installation:
+
+<setup staging location>\\setup.exe /qb ACCEPTEULA=yes ADDLOCAL=<feature1>,<feature2>,.... SOFTWARE\_CLASS=Professional SEAT\_PREFERENCE=Fixed
+
+Specify installation features as follows:
+
+<table><colgroup width="*"></colgroup><tbody><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-57DE767F-E788-46B7-88C7-F766BBD1FC64"><b>ADDLOCAL feature</b> (Each feature name must be specified; for example, you cannot use ADDLOCAL=Applications to install all Application subfeatures.)</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-3C4158FF-B5B2-473E-9DD4-6191694A9F44"><b>Applications</b></p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-EDB9F32C-23D3-4402-84CD-1C4DA6446100">ArcMap</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-36807EA2-47BC-447E-A951-7A76A19FA4A3">ArcCatalog</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-CE7B93A3-9E66-4D33-B73A-CFCFF3FF83AB"><b>Miscellaneous features</b></p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-4A74E3D1-8D0F-497E-81D4-180A17B4ADD0">Python</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-EBC8C18E-806D-4A26-97FB-FA5D7B088567"><b>Extensions</b></p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-56DE55BE-A368-4017-9F93-BCBD72AA3EBE">Ext_3D_Analyst</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-B056BD98-F9C6-434E-BA0B-2F3AA59BD4A6">ArcScan</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-EAE2FA1E-21B9-465A-AE44-35FF00387A5F">GeoStatisticalAnalyst</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-FBCFE6E1-14DF-4563-B3D2-E0E642C12843">ArcMap_Publishing_Extension</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-2F61124E-B476-4B81-9BD4-6275907FF036">SpatialAnalyst</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-F5820B2F-66FB-4115-9085-A35F515D3A46">Schematics</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-CD8EA8B1-A35F-4D5A-A205-6C44EC198C12">NetworkAnalyst</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-45029E79-8E79-4650-BFBA-12EF9E63E63A">TrackingAnalyst</p></td></tr></tbody><caption></caption></table>
+
+<table><colgroup width="*"></colgroup><tbody><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-99C41948-7ABA-411B-9481-EBC58124D406"><b>Styles</b></p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-2BFA55B0-01BA-457B-85C4-E911C00B9E1B">CivicAndBusiness</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-43E1A08D-424A-4008-9106-E5F185FCC1F1">NaturalResources</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-0155CD07-97B7-425E-8688-528B6C24E048">Military</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-84E43DD3-8FF1-4907-AAED-661A78EB1169"><b>Templates</b></p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-39B86D6A-F0CB-4DEE-B1E2-7A6777F7180F">TemplateGeneral</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-F9ABCEC1-CBD8-4C5C-84C7-35161C95F89D">TemplateIndustry</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-28C3286D-7DDF-4ECD-A815-7B4C0BDC5351">TemplateWorld</p></td></tr><tr><td outputclass="" rowspan="1" colspan="1"><p id="GUID-0EA49F01-75DE-4BF4-B1BC-A7F77D9751DF">TemplateUSA</p></td></tr></tbody><caption></caption></table>
+
+## How to perform an uninstallation of ArcGIS 10.8.2 for Desktop silently
+
+To uninstall a product silently, use the following Windows installer command:
+
+msiexec.exe /x <{product code}> /qb
+
+For example, to uninstall ArcGIS 10.8.2 for Desktop silently, use the following command line:
+
+msiexec.exe /x {791AB03F-1AF2-43FE-8F5D-8FDC9509D7CF} /qb
