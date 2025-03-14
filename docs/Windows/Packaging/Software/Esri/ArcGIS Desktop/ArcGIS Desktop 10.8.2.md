@@ -31,11 +31,11 @@
 ## Intune
 ### Detection Rules
 #### Rule type: Registry
-???- info "Key Path: ``"
+???- info "Key Path: `HKLM\Software\MRFK\Esri\ArcGIS Desktop`"
 	- Value name: Version
 	- Detection method: Version comparison
-	- Operator: Greater than or equal to
-	- Value: ``
+	- Operator: equal to
+	- Value: `10.8.2`
 ## Tests
 - [ ] Application installs on Autopilot VMs
 - [ ] Application is detected in Intune
