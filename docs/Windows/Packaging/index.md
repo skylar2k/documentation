@@ -11,3 +11,4 @@ To use this repo, you need:
 ## Useful software for packaging
 - [Process Monitor - Sysinternals | Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
 - [RegistryChangesView - Compare snapshots of Windows Registry](https://www.nirsoft.net/utils/registry_changes_view.html)
+- [InstEd It! - InstEd - Make packaging more productive](http://www.instedit.com/)
