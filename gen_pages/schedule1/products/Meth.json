@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 885
+  },
+  "m_Name": "Meth",
+  "Name": "Meth",
+  "Description": "Classic methamphetamine. A powerful stimulant with intense physical and mentral addictiveness.",
+  "ID": "meth",
+  "Icon": {
+    "m_FileID": 0,
+    "m_PathID": 5836
+  },
+  "Category": 0,
+  "Keywords": [],
+  "AvailableInDemo": false,
+  "LabelDisplayColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "StackLimit": 20,
+  "Equippable": {
+    "m_FileID": 0,
+    "m_PathID": 171348
+  },
+  "CustomItemUI": {
+    "m_FileID": 0,
+    "m_PathID": 175428
+  },
+  "CustomInfoContent": {
+    "m_FileID": 0,
+    "m_PathID": 169533
+  },
+  "legalStatus": 4,
+  "BasePurchasePrice": 50.0,
+  "ShopCategories": [],
+  "RequiresLevelToPurchase": false,
+  "RequiredRank": {
+    "Rank": 0,
+    "Tier": 0
+  },
+  "ResellMultiplier": 0.5,
+  "StoredItem": {
+    "m_FileID": 0,
+    "m_PathID": 166528
+  },
+  "StationItem": {
+    "m_FileID": 0,
+    "m_PathID": 181249
+  },
+  "Properties": [],
+  "DrugTypes": [
+    {
+      "DrugType": 1
+    }
+  ],
+  "LawIntensityChange": 2.0,
+  "BasePrice": 70.0,
+  "MarketValue": 70.0,
+  "FunctionalProduct": {
+    "m_FileID": 0,
+    "m_PathID": 187316
+  },
+  "EffectsDuration": 180,
+  "BaseAddictiveness": 0.6,
+  "ValidPackaging": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 166344
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 166346
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 166345
+    }
+  ],
+  "CrystalMaterial": {
+    "m_FileID": 0,
+    "m_PathID": 697
+  },
+  "TintColor": {
+    "r": 1.3962263,
+    "g": 1.1393734,
+    "b": 1.1393734,
+    "a": 1.0
+  }
+}

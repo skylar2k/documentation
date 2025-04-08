@@ -1,0 +1,108 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 4185
+  },
+  "m_Name": "OG Kush",
+  "Name": "OG Kush",
+  "Description": "Old school OG Kush. Offers a balanced, relaxing high with subtle physical effects.",
+  "ID": "ogkush",
+  "Icon": {
+    "m_FileID": 0,
+    "m_PathID": 5800
+  },
+  "Category": 0,
+  "Keywords": [],
+  "AvailableInDemo": true,
+  "LabelDisplayColor": {
+    "r": 1.0,
+    "g": 1.0,
+    "b": 1.0,
+    "a": 1.0
+  },
+  "StackLimit": 20,
+  "Equippable": {
+    "m_FileID": 0,
+    "m_PathID": 177162
+  },
+  "CustomItemUI": {
+    "m_FileID": 0,
+    "m_PathID": 175428
+  },
+  "CustomInfoContent": {
+    "m_FileID": 0,
+    "m_PathID": 169533
+  },
+  "legalStatus": 2,
+  "BasePurchasePrice": 10.0,
+  "ShopCategories": [],
+  "RequiresLevelToPurchase": false,
+  "RequiredRank": {
+    "Rank": 0,
+    "Tier": 0
+  },
+  "ResellMultiplier": 0.5,
+  "StoredItem": {
+    "m_FileID": 0,
+    "m_PathID": 183699
+  },
+  "StationItem": {
+    "m_FileID": 0,
+    "m_PathID": 168372
+  },
+  "Properties": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 166365
+    }
+  ],
+  "DrugTypes": [
+    {
+      "DrugType": 0
+    }
+  ],
+  "LawIntensityChange": 1.0,
+  "BasePrice": 35.0,
+  "MarketValue": 38.0,
+  "FunctionalProduct": {
+    "m_FileID": 0,
+    "m_PathID": 190038
+  },
+  "EffectsDuration": 180,
+  "BaseAddictiveness": 0.0,
+  "ValidPackaging": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 166344
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 166346
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 166345
+    }
+  ],
+  "MainMat": {
+    "m_FileID": 0,
+    "m_PathID": 699
+  },
+  "SecondaryMat": {
+    "m_FileID": 0,
+    "m_PathID": 700
+  },
+  "LeafMat": {
+    "m_FileID": 0,
+    "m_PathID": 698
+  },
+  "StemMat": {
+    "m_FileID": 0,
+    "m_PathID": 701
+  }
+}

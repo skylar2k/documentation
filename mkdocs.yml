@@ -53,3 +53,11 @@ plugins:
       type: datetime
       timezone: "Europe/Amsterdam"
       enable_creation_date: true
+  - gen-files:
+      scripts:
+        - gen_pages_schedule1.py
+  #- macros
+
+
+#hooks:
+#  - schedule1.py

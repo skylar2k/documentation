@@ -1,3 +1,4 @@
+# Properties
 Favorite properties were assigned to customers by randomness, but remains the same for every player.
 ## List
 Properties have 5 different tiers, ranging from 1 to 5

@@ -1,3 +1,4 @@
+# Products
 ## Value calculation
 Example of calculation, where the starting value depends on the base value of the product.
 ```py
@@ -5,8 +6,8 @@ value: float = 35.0
 tmp: float = 1.0
 for property in product['properties']:
 	value += property['value_change']
-	value += product['base_value'] * property['vmultiple']
-	tmp *= property['value_multiplier']
+	value += product['base_price'] * property['value_multiple']
+	tmp *= property['value_multiplier'] # 1 for all the existing properties
 round(value * tmp)	
 ```
 ## Drug affinities
@@ -23,8 +24,8 @@ The affinities are serialized like so:
 ]
 ```
 Where the order is based on the following enum:
-```c#
-public enum EDrugType  
+```rust
+enum EDrugType  
 {  
     Marijuana,  
     Methamphetamine,  
@@ -32,5 +33,16 @@ public enum EDrugType
     MDMA,  
     Shrooms,  
     Heroin  
+}
+```
+## Legal status
+Items have a property that determine it's legal status:
+```rust
+enum ELegalStatus {  
+    Legal,  
+    ControlledSubstance,  
+    LowSeverityDrug,  
+    ModerateSeverityDrug,  
+    HighSeverityDrug  
 }
 ```
