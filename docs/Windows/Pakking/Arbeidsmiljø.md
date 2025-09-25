@@ -8,7 +8,7 @@ Last ned og installer siste versjon av:
 - [microsoft/Microsoft-Win32-Content-Prep-Tool: A tool to wrap Win32 App and then it can be uploaded to Intune](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool)
 - [Gpg4win - Secure email and file encryption with GnuPG for Windows](https://www.gpg4win.org/)
 ### Git
-For å benytte git må du sette navn og epost til det samme du har i GitLab.
+For å benytte git må du sette navn og epost til det samme du har i GitLab. Anbefaler å lese [Using Git - GitHub Docs](https://docs.github.com/en/get-started/using-git) for en liten introduksjon.
 
 1. Navn: `git config --global user.name "John Doe"`
 2. Epost: `git config --global user.email johndoe@example.com`
