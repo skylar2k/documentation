@@ -39,7 +39,7 @@ Dette betyr at fastlege ikke kan være den som søker om dette, men heldigvis s�
 
 - https://www.hksoslo.no/hormoner
 - [Nasjonal retningslinje for kjønnsinkongruens](https://www.helsedirektoratet.no/retningslinjer/kjonnsinkongruens/utredning-behandling-og-oppfolging#ved-kjonnsinkongruens-bor-generelle-prinsipper-for-utredning-og-behandling-folges-praktisk-informasjon)
-## Fotlenker
+
 [^1]: https://www.helsedirektoratet.no/retningslinjer/kjonnsinkongruens/utredning-behandling-og-oppfolging#ved-kjonnsinkongruens-bor-generelle-prinsipper-for-utredning-og-behandling-folges-praktisk-informasjon
 [^2]: https://www.helsedirektoratet.no/rundskriv/kapittel-5-stonad-ved-helsetjenester/vedlegg-1-til--5-14-legemiddellisten/virkestoffer/kjonnshormoner
 
