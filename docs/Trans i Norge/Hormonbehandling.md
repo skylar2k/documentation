@@ -22,7 +22,7 @@ Dette betyr at retningslinjene er åpne for at fastleger kan starte opp kjønnsb
 
 I påvente av etablering av operative RSKI der denne behandlingen gis, kan fastlege samarbeide med lokalt helsepersonell med nødvendig kompetanse som endokrinologer, psykologer, NACS-sertifiserte sexologer, eller **med det tverrfaglige teamet som finnes ved [Helsestasjon for kjønn og seksualitet (HKS)](https://www.hksoslo.no/hks-og-kjonn).**
 ## Blåresept
-Det er mange som tror at det kun er NBTK, men dette stemmer ikke. Jeg personlig startet min behandling privat og gjekk gradvis over til å få dette dekt av staten.
+Det er mange som tror at det kun er NBTK som kan gi blåresept, men dette stemmer ikke. Jeg personlig startet min behandling privat og gjekk gradvis over til å få dette dekt av staten.
 
 Den mest vanlige veien for å få blå resept for kjønnshormoner i Norge er søknad om individuell stønad[^2]. Dette gjelder også NBTK. Søknaden for stønad til Kjønnshormoner må knyttes til en godkjent diagnose og har spesialistkrav.
 
