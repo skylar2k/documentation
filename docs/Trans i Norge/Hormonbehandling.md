@@ -16,7 +16,7 @@ Den nasjonale retningslinjen for kjønnsinkongruens sier følgende om oppstart a
 > 
 > Oppfølging av behandling, kontroller og justering av dosering av legemidler kan utføres hos fastlegen, eller ved lokale sykehus i samarbeid med regionalt senter og/eller nasjonal behandlingstjeneste.
 > 
-> Hormonell behandling vil være aktuelt uten at alle kriterier for å sette en diagnose anses for oppfylt. Dette gjelder for eksempel når pasienter har startet behandling i utlandet eller ved selvmedisinering. Regionalt senter og/eller nasjonal behandlingstjeneste vurderer behov for, og omfanget av, utredning og oppfølging.
+> ==Hormonell behandling vil være aktuelt uten at alle kriterier for å sette en diagnose anses for oppfylt. Dette gjelder for eksempel når pasienter har startet behandling i utlandet eller ved selvmedisinering==. Regionalt senter og/eller nasjonal behandlingstjeneste vurderer behov for, og omfanget av, utredning og oppfølging.
 
 Dette betyr at retningslinjene er åpne for at fastleger kan starte opp kjønnsbekreftende hormonbehandling.
 
@@ -39,9 +39,7 @@ Dette betyr at fastlege ikke kan være den som søker om dette, men heldigvis s�
 
 - https://www.hksoslo.no/hormoner
 - [Nasjonal retningslinje for kjønnsinkongruens](https://www.helsedirektoratet.no/retningslinjer/kjonnsinkongruens/utredning-behandling-og-oppfolging#ved-kjonnsinkongruens-bor-generelle-prinsipper-for-utredning-og-behandling-folges-praktisk-informasjon)
-
-
-
+## Fotlenker
 [^1]: https://www.helsedirektoratet.no/retningslinjer/kjonnsinkongruens/utredning-behandling-og-oppfolging#ved-kjonnsinkongruens-bor-generelle-prinsipper-for-utredning-og-behandling-folges-praktisk-informasjon
 [^2]: https://www.helsedirektoratet.no/rundskriv/kapittel-5-stonad-ved-helsetjenester/vedlegg-1-til--5-14-legemiddellisten/virkestoffer/kjonnshormoner
 

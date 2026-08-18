@@ -13,6 +13,12 @@ theme:
   features:
     - navigation.indexes
     - navigation.instant
+    - navigation.path
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - toc.integrate
     - content.tooltips
     - content.code.annotate
     - content.code.copy
