@@ -2,8 +2,6 @@ site_name: unix.rs
 site_url: https://www.unix.rs
 site_dir: public
 docs_dir: ./docs
-not_in_nav: |
-  /external/
 
 watch:
   - includes
@@ -15,6 +13,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.instant
+    - content.tooltips
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
@@ -26,7 +25,9 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
-      base_path: includes/sourcefiles
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed:
