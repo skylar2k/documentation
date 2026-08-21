@@ -3,8 +3,11 @@ Kunnskapsdatabase for hvordan man kan oppnå diverse ting som trans person i det
 ## Ressurser
 - https://www.hksoslo.no/
 - https://transhjelpen.no/
+- [Helsedirektoratet sine retningslinjer for kjønnsinkongruens](https://www.helsedirektoratet.no/retningslinjer/kjonnsinkongruens)
+### Veileder 
+- [Hvordan endre juridisk kjønn](https://foreningenfri.no/informasjon/juridiskkjonn/)
 ### Sosialt
-- [Trans Norge - Discord server](discord.gg/transnorge)
+- [Trans Norge - Discord server](https://discord.gg/transnorge)
 ### For fastleger
 - [HKS rutiner for feminiserende hormonbehandling](https://static1.squarespace.com/static/63a1caefce33c705009a0c2a/t/67326da73b559b29ef3104f6/1731358119507/HKS+rutiner+-+fem.+hormonbehandling.pdf)
 - [HKS Veileder for oppfølging av trans-feminine pasienter hos fastlegen](https://static1.squarespace.com/static/63a1caefce33c705009a0c2a/t/684ed2fe0b1d5041eaadd0cb/1749996286684/Veileder+for+oppf%C3%B8lging+av+trans-feminine+pasienter+hos+fastlege.pdf)
