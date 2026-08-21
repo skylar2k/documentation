@@ -4,4 +4,4 @@ hide:
   - navigation
 ---
 ## Sider
-- [[Trans i Norge/index|Trans i Norge]]
+- [[TransiNorge/index|Trans i Norge]]
