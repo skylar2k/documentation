@@ -6,6 +6,8 @@ docs_dir: ./docs
 watch:
   - includes
 
+exclude_docs: "files"
+
 theme:
   name: material
   palette:
