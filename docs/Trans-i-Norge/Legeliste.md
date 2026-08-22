@@ -9,7 +9,9 @@ Liste over leger og spesialister med erfaring innen behandling av transpersoner.
 ### Jason Lund
 
 **Type**: Privat allmennlege
+
 **Klinikk**: Lund Medical
+
 **Finansiering**: Privat behandling
 
 - Jobber også ved HKS Oslo.
@@ -32,7 +34,9 @@ Liste over leger og spesialister med erfaring innen behandling av transpersoner.
 ### Peter Gabriel Zadeh
 
 **Type**: Avtalespesialist
+
 **Klinikk**: SpesialistSenteret Pilestredet Park
+
 **Finansiering**: Kontoradresse dekkes etter vanlige regler for avtalespesialister
 
 Dr. Peter Zadeh kan søke om individuell stønad for kjønnshormoner, altså blå-resept.
@@ -55,9 +59,11 @@ TODO
 
 ### Ingun Wik
 
-- **Type**: Privat
-- **Finansiering**: Privat behandling
-- Følger WPATH SOC8
+**Type**: Privat
+
+**Finansiering**: Privat behandling
+
+Følger WPATH SOC8
 
 #### Kontakt
 
@@ -67,6 +73,7 @@ TODO
 ### Esben Esther Pirelli Benestad
 
 - **Type**: Privat
+
 - **Finansiering**: Privat behandling
 
 EEPB har som regel et sterkt ønske rundt fysisk oppmøte for første time, men tar digitale timer etter dette.
@@ -82,9 +89,11 @@ EEPB har som regel et sterkt ønske rundt fysisk oppmøte for første time, men 
 
 ### Halfdan Vier Simensen
 
-- **Type**: Privat
-- **Finansiering**: Privat behandling
-- **Klinikk**: Aviva Helse
+**Type**: Privat
+
+**Finansiering**: Privat behandling
+
+**Klinikk**: Aviva Helse
 
 Privat kirurg som har kompetanse med kjønnsbekreftende operasjoner.
 
